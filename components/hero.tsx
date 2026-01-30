@@ -59,7 +59,7 @@ export function Hero() {
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
         {/* Decorative crown sigil */}
-        <div className="mb-6 md:mb-8">
+          <div className="mb-6 md:mb-8 flex justify-center w-full">
           <svg
             viewBox="0 0 100 50"
             className="w-32 md:w-48 h-auto mx-auto text-blood-red"

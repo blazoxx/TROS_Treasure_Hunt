@@ -418,7 +418,7 @@ export function Houses() {
           <div className="flex flex-col items-center justify-center py-20 border border-white/5 bg-black/40 backdrop-blur-md">
             <Lock className="w-16 h-16 text-red-950 mb-6 animate-bounce" />
             <p className="text-xs font-mono uppercase tracking-[0.4em] text-zinc-500 mb-2">System Locked</p>
-            <h3 className="text-xl font-serif text-zinc-100 mb-8 italic">Profiles Restricted Until Preliminaries End</h3>
+              <h3 className="text-xl font-serif text-zinc-100 mb-8 italic px-4 text-center">Profiles Restricted Until Preliminaries End</h3>
             <CountdownTimer releaseDate={HOUSES_RELEASE_DATE} />
           </div>
         ) : (

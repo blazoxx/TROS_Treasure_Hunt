@@ -3,71 +3,74 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Dark Medieval Fantasy Theme - The Realm of Six */
+/* Dark Medieval Horror Fantasy Theme - The Realm of Six */
 :root {
-  /* Deep charcoal/black backgrounds */
-  --background: oklch(0.08 0.01 30);
-  --foreground: oklch(0.92 0.01 60);
+  /* Deep charcoal/black backgrounds - Horror Enhanced */
+  --background: oklch(0.05 0.01 30);
+  --foreground: oklch(0.88 0.01 60);
   
-  /* Card - slightly lighter charcoal */
-  --card: oklch(0.12 0.01 30);
-  --card-foreground: oklch(0.92 0.01 60);
+  /* Card - darker with horror ambiance */
+  --card: oklch(0.08 0.01 30);
+  --card-foreground: oklch(0.88 0.01 60);
   
   /* Popover */
-  --popover: oklch(0.1 0.01 30);
-  --popover-foreground: oklch(0.92 0.01 60);
+  --popover: oklch(0.07 0.01 30);
+  --popover-foreground: oklch(0.88 0.01 60);
   
-  /* Primary - Blood Red */
-  --primary: oklch(0.5 0.2 25);
+  /* Primary - Deep Blood Red (Horror) */
+  --primary: oklch(0.42 0.24 25);
   --primary-foreground: oklch(0.98 0 0);
   
-  /* Secondary - Charcoal */
-  --secondary: oklch(0.18 0.01 30);
-  --secondary-foreground: oklch(0.85 0.02 60);
+  /* Secondary - Darker Charcoal */
+  --secondary: oklch(0.12 0.01 30);
+  --secondary-foreground: oklch(0.8 0.02 60);
   
   /* Muted */
-  --muted: oklch(0.15 0.01 30);
-  --muted-foreground: oklch(0.6 0.02 60);
+  --muted: oklch(0.1 0.01 30);
+  --muted-foreground: oklch(0.5 0.02 60);
   
-  /* Accent - Burnt Orange/Ember */
-  --accent: oklch(0.55 0.18 45);
+  /* Accent - Crimson/Ember */
+  --accent: oklch(0.5 0.2 35);
   --accent-foreground: oklch(0.98 0 0);
   
   /* Destructive - Deep Blood */
-  --destructive: oklch(0.45 0.22 25);
+  --destructive: oklch(0.38 0.25 25);
   --destructive-foreground: oklch(0.98 0 0);
   
-  /* Borders */
-  --border: oklch(0.25 0.02 30);
-  --input: oklch(0.2 0.01 30);
-  --ring: oklch(0.5 0.2 25);
+  /* Borders - subtle horror glow */
+  --border: oklch(0.18 0.02 30);
+  --input: oklch(0.15 0.01 30);
+  --ring: oklch(0.42 0.24 25);
   
   /* Chart colors */
-  --chart-1: oklch(0.5 0.2 25);
-  --chart-2: oklch(0.55 0.18 45);
-  --chart-3: oklch(0.45 0.15 250);
-  --chart-4: oklch(0.6 0.15 80);
-  --chart-5: oklch(0.5 0.12 200);
+  --chart-1: oklch(0.42 0.24 25);
+  --chart-2: oklch(0.5 0.2 35);
+  --chart-3: oklch(0.4 0.15 250);
+  --chart-4: oklch(0.55 0.15 80);
+  --chart-5: oklch(0.45 0.12 200);
   
-  --radius: 0.25rem;
+  --radius: 0rem;
   
   /* Sidebar */
-  --sidebar: oklch(0.1 0.01 30);
-  --sidebar-foreground: oklch(0.92 0.01 60);
-  --sidebar-primary: oklch(0.5 0.2 25);
+  --sidebar: oklch(0.07 0.01 30);
+  --sidebar-foreground: oklch(0.88 0.01 60);
+  --sidebar-primary: oklch(0.42 0.24 25);
   --sidebar-primary-foreground: oklch(0.98 0 0);
-  --sidebar-accent: oklch(0.18 0.01 30);
-  --sidebar-accent-foreground: oklch(0.85 0.02 60);
-  --sidebar-border: oklch(0.25 0.02 30);
-  --sidebar-ring: oklch(0.5 0.2 25);
+  --sidebar-accent: oklch(0.12 0.01 30);
+  --sidebar-accent-foreground: oklch(0.8 0.02 60);
+  --sidebar-border: oklch(0.18 0.02 30);
+  --sidebar-ring: oklch(0.42 0.24 25);
   
-  /* Custom colors for the theme */
-  --blood-red: oklch(0.5 0.22 25);
-  --ember-orange: oklch(0.6 0.2 45);
-  --ice-blue: oklch(0.6 0.12 230);
-  --gold: oklch(0.7 0.15 85);
-  --sea-teal: oklch(0.5 0.1 200);
-  --rose-pink: oklch(0.6 0.12 350);
+  /* Custom horror colors for the theme */
+  --blood-red: oklch(0.42 0.26 20);
+  --blood-red-dark: oklch(0.3 0.22 20);
+  --ember-orange: oklch(0.55 0.22 40);
+  --ice-blue: oklch(0.55 0.14 230);
+  --gold: oklch(0.65 0.18 80);
+  --sea-teal: oklch(0.45 0.12 190);
+  --rose-pink: oklch(0.55 0.14 350);
+  --shadow-red: rgba(100, 20, 20, 0.5);
+  --glow-blood: rgba(139, 27, 27, 0.3);
 }
 
 @theme inline {
@@ -131,41 +134,47 @@
     @apply bg-background text-foreground;
   }
   
-  /* Scrollbar styling */
+  /* Scrollbar styling - Horror themed */
   ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
   }
   
   ::-webkit-scrollbar-track {
-    background: transparent;
+    background: oklch(0.08 0.01 30);
   }
   
   ::-webkit-scrollbar-thumb {
-    background: rgba(139, 50, 70, 0.4);
-    border-radius: 4px;
+    background: var(--blood-red-dark);
+    border-radius: 0;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background: rgba(139, 50, 70, 0.6);
+    background: var(--blood-red);
+    box-shadow: 0 0 10px var(--glow-blood);
   }
   
   /* Firefox scrollbar */
   * {
-    scrollbar-color: rgba(139, 50, 70, 0.4) transparent;
+    scrollbar-color: var(--blood-red-dark) oklch(0.08 0.01 30);
     scrollbar-width: thin;
   }
 }
 
-/* Ember glow animation */
+/* Horror-themed animations */
 @keyframes ember-glow {
-  0%, 100% { opacity: 0.4; transform: translateY(0) scale(1); }
-  50% { opacity: 0.8; transform: translateY(-5px) scale(1.1); }
+  0%, 100% { opacity: 0.3; transform: translateY(0) scale(1); }
+  50% { opacity: 0.7; transform: translateY(-8px) scale(1.15); }
 }
 
 @keyframes flicker {
   0%, 100% { opacity: 1; }
-  50% { opacity: 0.8; }
+  10% { opacity: 0.9; }
+  20% { opacity: 1; }
+  30% { opacity: 0.85; }
+  50% { opacity: 0.75; }
+  70% { opacity: 0.9; }
+  90% { opacity: 0.8; }
 }
 
 @keyframes float {
@@ -174,29 +183,62 @@
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px var(--blood-red), 0 0 40px var(--blood-red); }
-  50% { box-shadow: 0 0 40px var(--blood-red), 0 0 80px var(--blood-red); }
+  0%, 100% { 
+    box-shadow: 0 0 10px var(--blood-red), 0 0 20px var(--blood-red-dark); 
+  }
+  50% { 
+    box-shadow: 0 0 20px var(--blood-red), 0 0 40px var(--blood-red-dark); 
+  }
+}
+
+@keyframes blood-drip {
+  0% { transform: translateY(-10px); opacity: 0; }
+  10% { opacity: 0.6; }
+  90% { opacity: 0.6; }
+  100% { transform: translateY(100vh); opacity: 0; }
+}
+
+@keyframes ominous-glow {
+  0%, 100% { text-shadow: 0 0 4px var(--blood-red), 0 0 8px var(--shadow-red); }
+  50% { text-shadow: 0 0 10px var(--blood-red), 0 0 18px var(--shadow-red); }
+}
+
+@keyframes creep-in {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }
 
 .animate-ember {
-  animation: ember-glow 3s ease-in-out infinite;
+  animation: ember-glow 4s ease-in-out infinite;
 }
 
 .animate-flicker {
-  animation: flicker 2s ease-in-out infinite;
+  animation: flicker 3s ease-in-out infinite;
 }
 
 .animate-float {
-  animation: float 6s ease-in-out infinite;
+  animation: float 8s ease-in-out infinite;
 }
 
 .animate-pulse-glow {
-  animation: pulse-glow 2s ease-in-out infinite;
+  animation: pulse-glow 3s ease-in-out infinite;
 }
 
-/* Text shadow for dramatic effect */
+.animate-ominous-glow {
+  animation: ominous-glow 4s ease-in-out infinite;
+}
+
+.animate-creep-in {
+  animation: creep-in 0.8s ease-out;
+}
+
+/* Text shadow for refined dramatic effect */
 .text-shadow-fire {
-  text-shadow: 0 0 5px var(--blood-red), 0 0 10px var(--ember-orange);
+  text-shadow: 0 0 8px var(--blood-red), 0 0 15px var(--ember-orange), 0 2px 20px rgba(100, 20, 20, 0.4);
+}
+
+.text-shadow-blood {
+  text-shadow: 0 0 10px var(--blood-red), 0 0 20px var(--blood-red-dark), 0 4px 15px rgba(100, 20, 20, 0.5);
 }
 
 .text-shadow-subtle {

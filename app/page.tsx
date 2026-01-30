@@ -11,7 +11,7 @@ import { AtmosphericEffects } from "@/components/atmospheric-effects";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background relative">
+    <main className="min-h-screen bg-black relative overflow-x-hidden">
       <AtmosphericEffects />
       <Navbar />
       <Hero />

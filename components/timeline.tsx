@@ -28,19 +28,22 @@ const timelineEvents = [
 
 export function Timeline() {
   return (
-    <section id="timeline" className="relative py-20 md:py-32 overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-card to-background" />
+    <section id="timeline" className="relative py-20 md:py-32 overflow-hidden bg-black">
+      {/* Background - horror enhanced */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black via-blood-red/5 to-black" />
+      
+      {/* Grain texture */}
+      <div className="absolute inset-0 pointer-events-none opacity-[0.03] bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center mb-16 md:mb-24">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif tracking-tight mb-4 text-shadow-subtle">
-            <span className="text-foreground">THE PATH</span>
-            <span className="block text-blood-red mt-2">TO GLORY</span>
+            <span className="text-foreground">EVENT</span>
+            <span className="block text-blood-red mt-2">TIMELINE</span>
           </h2>
-          <p className="text-foreground/60 text-sm md:text-base uppercase tracking-widest mb-4">
-            Mark these dates or miss your destiny
+          <p className="text-foreground/60 text-sm md:text-base uppercase tracking-widest mb-4 font-mono">
+            Mark these important dates
           </p>
           <div className="w-32 h-px bg-gradient-to-r from-transparent via-blood-red to-transparent mx-auto" />
         </div>
@@ -48,7 +51,7 @@ export function Timeline() {
         {/* Timeline */}
         <div className="relative">
           {/* Vertical line */}
-          <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-blood-red via-ember-orange to-blood-red md:-translate-x-1/2" />
+          <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-px bg-linear-to-b from-blood-red via-blood-red-dark to-blood-red md:-translate-x-1/2" />
 
           <div className="space-y-8 md:space-y-12">
             {timelineEvents.map((event, index) => {

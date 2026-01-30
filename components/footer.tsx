@@ -4,9 +4,12 @@ import { Instagram, Mail, Flame } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="relative py-12 md:py-16 border-t border-border overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-linear-to-b from-background to-card" />
+    <footer className="relative py-12 md:py-16 border-t border-blood-red/30 overflow-hidden bg-black">
+      {/* Background - horror enhanced */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black to-blood-red-dark/10" />
+      
+      {/* Grain texture */}
+      <div className="absolute inset-0 pointer-events-none opacity-[0.02] bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
@@ -73,8 +76,8 @@ export function Footer() {
 
         {/* Final motto */}
         <div className="mt-8 text-center">
-          <p className="text-foreground/30 text-xs italic tracking-wide">
-            {"\"When the hunt ends, only one shall wear the crown.\""}
+          <p className="text-blood-red/50 text-xs italic tracking-wide font-serif">
+            {"\"Six Houses. One throne. Let the hunt begin.\""}
           </p>
         </div>
       </div>

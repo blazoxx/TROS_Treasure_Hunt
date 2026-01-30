@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="relative py-12 md:py-16 border-t border-blood-red/30 overflow-hidden bg-black">
       {/* Background - horror enhanced */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black to-blood-red-dark/10" />
+      <div className="absolute inset-0 bg-linear-to-b from-black to-blood-red-dark/10" />
       
       {/* Grain texture */}
       <div className="absolute inset-0 pointer-events-none opacity-[0.02] bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />

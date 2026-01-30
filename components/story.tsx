@@ -45,6 +45,42 @@ const storyChapters: StoryChapter[] = [
       `In the north, House Stark rallied the frozen banners, their ancestral blades singing songs of vengeance in the bitter wind.`,
     ],
   },
+  {
+    id: "03",
+    title: "Chapter Three",
+    releaseDate: new Date("2026-02-07T00:00:00Z"),
+    content: [
+      `Placeholder content for chapter three.`,
+      `This will be updated with actual story content later.`,
+    ],
+  },
+  {
+    id: "04",
+    title: "Chapter Four",
+    releaseDate: new Date("2026-02-11T00:00:00Z"),
+    content: [
+      `Placeholder content for chapter four.`,
+      `This will be updated with actual story content later.`,
+    ],
+  },
+  {
+    id: "05",
+    title: "Chapter Five",
+    releaseDate: new Date("2026-02-14T00:00:00Z"),
+    content: [
+      `Placeholder content for chapter five.`,
+      `This will be updated with actual story content later.`,
+    ],
+  },
+  {
+    id: "06",
+    title: "Chapter Six",
+    releaseDate: new Date("2026-02-18T00:00:00Z"),
+    content: [
+      `Placeholder content for chapter six.`,
+      `This will be updated with actual story content later.`,
+    ],
+  },
 ];
 
 function CountdownTimer({ releaseDate }: { releaseDate: Date }) {
@@ -77,11 +113,11 @@ function CountdownTimer({ releaseDate }: { releaseDate: Date }) {
   if (!timeLeft) return null;
 
   return (
-    <div className="mt-8 border-t border-red-950/50 pt-8 animate-pulse">
+    <div className="mt-10 border-t border-red-950/50 pt-8 animate-pulse">
       <div className="flex items-center justify-center gap-2 mb-6">
         <Activity className="w-3 h-3 text-red-600" />
         <p className="text-[10px] font-mono uppercase tracking-[0.4em] text-red-700">
-          Manifesting Sequence
+          Raven Watch
         </p>
       </div>
       <div className="flex justify-center gap-8 text-center">
@@ -168,7 +204,7 @@ export function Story() {
                       }`}
                     />
                     <span className="text-[10px] mb-12 font-mono uppercase tracking-widest text-zinc-600">
-                      {isReleased ? "Verified Record" : "Data Corrupted"}
+                      {isReleased ? "Verified Chronicle" : "Sealed Record"}
                     </span>
                     {isReleased ? (
                       <Skull className="w-3 h-3 text-red-900" />
@@ -209,14 +245,14 @@ export function Story() {
                       </div>
                     </div>
                   ) : (
-                    <div className="max-w-xl mx-auto text-center py-12 bg-black/20 border border-white/5 rounded-sm backdrop-blur-sm">
-                      <Lock className="mx-auto mb-6 w-8 h-8 text-red-950" />
-                      <p className="text-xs font-mono text-zinc-600 mb-1">
-                        UNAUTHORIZED ACCESS DETECTED
+                    <div className="max-w-xl mx-auto text-center py-12 bg-white/5 border border-white/10 rounded-sm backdrop-blur-sm">
+                      <Lock className="mx-auto mb-6 w-8 h-8 text-red-900" />
+                      <p className="text-xs font-mono text-zinc-300 mb-1">
+                        UNSWORN EYES DETECTED
                       </p>
-                      <p className="text-[10px] font-mono text-zinc-700">
-                        AWAITING TEMPORAL REALIGNMENT:{" "}
-                        {chapter.releaseDate.toLocaleDateString()}
+                      <p className="text-[10px] font-mono text-zinc-400">
+                        AWAITING THE APPOINTED HOUR:{" "}
+                        {chapter.releaseDate.toLocaleDateString('en-GB')}
                       </p>
                       {isNext && (
                         <CountdownTimer

@@ -37,7 +37,7 @@ export function Register() {
         {/* Main heading */}
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif tracking-tight mb-4 text-shadow-subtle">
           <span className="text-foreground">JOIN THE</span>
-          <span className="block text-blood-red mt-2">COMPETITION</span>
+          <span className="block text-blood-red mt-2">BATTLE NOW</span>
         </h2>
 
         {/* Tagline */}

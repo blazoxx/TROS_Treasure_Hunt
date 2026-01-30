@@ -1,8 +1,27 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { Skull, Swords } from "lucide-react";
 
 export function Register() {
+  const [embers, setEmbers] = useState<Array<{
+    left: number;
+    bottom: number;
+    delay: number;
+    duration: number;
+  }>>([]);
+
+  useEffect(() => {
+    setEmbers(
+      [...Array(15)].map(() => ({
+        left: Math.random() * 100,
+        bottom: Math.random() * 30,
+        delay: Math.random() * 5,
+        duration: 3 + Math.random() * 4,
+      }))
+    );
+  }, []);
+
   return (
     <section id="register" className="relative py-20 md:py-32 overflow-hidden bg-black">
       {/* Background with blood/fire effect */}
@@ -14,15 +33,15 @@ export function Register() {
 
       {/* Ember particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(15)].map((_, i) => (
+        {embers.map((ember, i) => (
           <div
             key={i}
             className="absolute w-1 h-1 bg-ember-orange rounded-full animate-ember"
             style={{
-              left: `${Math.random() * 100}%`,
-              bottom: `${Math.random() * 30}%`,
-              animationDelay: `${Math.random() * 5}s`,
-              animationDuration: `${3 + Math.random() * 4}s`,
+              left: `${ember.left}%`,
+              bottom: `${ember.bottom}%`,
+              animationDelay: `${ember.delay}s`,
+              animationDuration: `${ember.duration}s`,
             }}
           />
         ))}

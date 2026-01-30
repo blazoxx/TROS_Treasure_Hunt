@@ -154,7 +154,7 @@ export function Story() {
 
       <div className="relative z-10 max-w-5xl mx-auto px-6">
         {/* Header */}
-        <header className="mb-40 text-left border-l-2 border-blood-red-dark pl-8">
+          <header className="mb-40 text-left pl-0 md:pl-8 ml-4 md:ml-0">
           <span className="block text-xs font-mono uppercase tracking-[0.6em] text-blood-red mb-2">
             Chronicle Archive // 044
           </span>

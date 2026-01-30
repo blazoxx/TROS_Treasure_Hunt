@@ -69,7 +69,7 @@ export function Navbar() {
 
         {/* Mobile Navigation - Horror enhanced */}
         {isMobileMenuOpen && (
-          <div className="md:hidden absolute top-16 left-0 right-0 bg-black/98 backdrop-blur-md border-b border-blood-red/30 shadow-[0_8px_30px_rgba(100,20,20,0.4)] animate-creep-in">
+           <div className="md:hidden absolute top-16 md:top-20 left-0 right-0 bg-black/98 backdrop-blur-md border-b border-blood-red/30 shadow-[0_8px_30px_rgba(100,20,20,0.4)] animate-creep-in">
             <div className="flex flex-col py-4">
               {navLinks.map((link) => (
                 <a

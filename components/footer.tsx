@@ -1,6 +1,7 @@
 "use client";
 
 import { Instagram, Mail, Flame } from "lucide-react";
+import { TotalVisitors } from "./total-visitors";
 
 export function Footer() {
   return (
@@ -69,6 +70,7 @@ export function Footer() {
           <p className="text-foreground/40 text-xs uppercase tracking-widest">
             © THE REALM OF SIX — SEASON I
           </p>
+          <TotalVisitors />
           <p className="text-foreground/40 text-xs">
             All rights reserved. IIIT Bhagalpur 2026
           </p>

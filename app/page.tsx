@@ -10,6 +10,9 @@ import { Footer } from "@/components/footer";
 import { AtmosphericEffects } from "@/components/atmospheric-effects";
 import { LiveVisitors } from "@/components/live-visitors";
 import { NightWatch } from "@/components/night-watch";
+import { ErrorBoundary } from "@/components/error-boundary";
+import { FAQ } from "@/components/faq";
+import { ScrollToTop } from "@/components/scroll-to-top";
 
 export default function Home() {
   return (
@@ -23,13 +26,19 @@ export default function Home() {
       <EventDetails />
       <Rules />
       <Timeline />
+      <FAQ />
       <Register />
       <Footer />
       
       {/* Live Visitors - Mobile Bottom Left */}
-      <div className="md:hidden fixed bottom-4 left-4 z-40">
-        <LiveVisitors />
-      </div>
+      <ErrorBoundary>
+        <div className="md:hidden fixed bottom-4 left-4 z-40">
+          <LiveVisitors />
+        </div>
+      </ErrorBoundary>
+      
+      {/* Scroll to Top Button */}
+      <ScrollToTop />
     </main>
   );
 }

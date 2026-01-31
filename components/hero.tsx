@@ -100,6 +100,12 @@ export function Hero() {
         {/* CTA Button */}
         <a
           href="#register"
+          onClick={() => {
+            // Track register button click
+            if (typeof window !== 'undefined' && (window as any).va) {
+              (window as any).va('track', 'Register Click', { location: 'hero' });
+            }
+          }}
           className="inline-block px-8 py-4 md:px-12 md:py-5 bg-blood-red text-foreground font-bold text-sm md:text-base uppercase tracking-widest border-2 border-blood-red hover:bg-transparent hover:text-blood-red transition-all duration-300 relative overflow-hidden group"
         >
           <span className="relative z-10">Register Now</span>

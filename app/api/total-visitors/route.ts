@@ -1,10 +1,10 @@
 import { NextResponse } from 'next/server';
 import { NextRequest } from 'next/server';
-import getClientPromise from '@/lib/mongodb';
+import { getMongoClient } from '@/lib/mongodb';
 
 async function getVisitorCount() {
   try {
-    const client = await getClientPromise();
+    const client = await getMongoClient();
     const db = client.db('thunt');
     const collection = db.collection('stats');
     
@@ -18,7 +18,7 @@ async function getVisitorCount() {
 
 async function incrementVisitorCount() {
   try {
-    const client = await getClientPromise();
+    const client = await getMongoClient();
     const db = client.db('thunt');
     const collection = db.collection('stats');
     
@@ -28,7 +28,7 @@ async function incrementVisitorCount() {
       { upsert: true, returnDocument: 'after' }
     );
     
-    return result?.count || 1;
+    return result.value?.count || 1;
   } catch (error) {
     console.error('Error incrementing visitor count:', error);
     return 0;

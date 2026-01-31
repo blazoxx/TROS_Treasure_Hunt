@@ -17,6 +17,7 @@ export function BackgroundMusic() {
 
     audio.volume = 0.3;
     playInFlightRef.current = true;
+    setShowPrompt(false);
 
     const playPromise = audio.play();
     
@@ -28,6 +29,7 @@ export function BackgroundMusic() {
           console.log('Music started successfully');
         })
         .catch(err => {
+          setShowPrompt(true);
           if (err?.name !== 'AbortError') {
             console.error('Failed to play audio:', err);
             alert('Failed to start music. Please check console for details.');

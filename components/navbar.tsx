@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { LiveVisitors } from "./live-visitors";
 
 const navLinks = [
   { href: "#story", label: "Story" },
@@ -42,7 +43,7 @@ export function Navbar() {
             <span className="absolute inset-0 blur-md text-blood-red opacity-0 group-hover:opacity-50 transition-opacity duration-300">THE REALM OF SIX</span>
           </a>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation + Mobile Visitors */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <a
@@ -54,6 +55,9 @@ export function Navbar() {
                 <span className="absolute bottom-0 left-0 w-0 h-px bg-blood-red group-hover:w-full transition-all duration-300" />
               </a>
             ))}
+            <div className="pl-4 border-l border-slate-700/50">
+              <LiveVisitors />
+            </div>
           </div>
 
           {/* Mobile Menu Button - Horror styled */}

@@ -8,6 +8,8 @@ import { Timeline } from "@/components/timeline";
 import { Register } from "@/components/register";
 import { Footer } from "@/components/footer";
 import { AtmosphericEffects } from "@/components/atmospheric-effects";
+import { LiveVisitors } from "@/components/live-visitors";
+import { NightWatch } from "@/components/night-watch";
 
 export default function Home() {
   return (
@@ -15,6 +17,7 @@ export default function Home() {
       <AtmosphericEffects />
       <Navbar />
       <Hero />
+      <NightWatch />
       <Story />
       <Houses />
       <EventDetails />
@@ -22,6 +25,11 @@ export default function Home() {
       <Timeline />
       <Register />
       <Footer />
+      
+      {/* Live Visitors - Mobile Bottom Left */}
+      <div className="md:hidden fixed bottom-4 left-4 z-40">
+        <LiveVisitors />
+      </div>
     </main>
   );
 }

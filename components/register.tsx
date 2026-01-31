@@ -55,13 +55,13 @@ export function Register() {
 
         {/* Main heading */}
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif tracking-tight mb-4 text-shadow-subtle">
-          <span className="text-foreground">JOIN THE</span>
-          <span className="block text-blood-red mt-2">BATTLE NOW</span>
+          <span className="text-foreground">PLEDGE YOUR SOUL OR</span>
+          <span className="block text-blood-red mt-2">PERISH IN DARKNESS</span>
         </h2>
 
         {/* Tagline */}
         <p className="text-foreground/70 text-lg md:text-xl lg:text-2xl mb-4 tracking-wide">
-          The throne awaits. Will you answer the call?
+          Those who hesitate shall be consumed by the abyss.
         </p>
 
         <p className="text-foreground/60 text-sm md:text-base max-w-2xl mx-auto mb-8 leading-relaxed font-light">
@@ -93,10 +93,10 @@ export function Register() {
         {/* Deadline warning */}
         <div className="mt-8 md:mt-12 p-4 bg-blood-red/10 border-2 border-blood-red/40 inline-block backdrop-blur-sm">
           <p className="text-blood-red text-sm md:text-base font-bold uppercase tracking-wider">
-            Registration Deadline: 31st January 2026
+            Registration Deadline: 3rd February 2026
           </p>
           <p className="text-foreground/60 text-xs mt-1 font-mono">
-            Don't miss your chance to compete
+            No soul shall be allowed after the gates close.
           </p>
         </div>
       </div>

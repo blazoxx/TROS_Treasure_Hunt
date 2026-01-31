@@ -13,6 +13,7 @@ export function TotalVisitors() {
       try {
         const response = await fetch("/api/total-visitors", { method: "POST" });
         const data = await response.json();
+        console.log("Total visitors response:", data);
         setTotal(data.total);
         setIsLoading(false);
       } catch (error) {
@@ -30,6 +31,19 @@ export function TotalVisitors() {
     };
 
     registerVisit();
+
+    // Update every 10 seconds to show changes
+    const interval = setInterval(async () => {
+      try {
+        const response = await fetch("/api/total-visitors");
+        const data = await response.json();
+        setTotal(data.total);
+      } catch (error) {
+        console.error("Failed to update total visitors:", error);
+      }
+    }, 10000);
+
+    return () => clearInterval(interval);
   }, []);
 
   if (isLoading) {

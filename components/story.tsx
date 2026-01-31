@@ -101,64 +101,54 @@ const storyChapters: StoryChapter[] = [
     title: "Fire and Ice",
     releaseDate: new Date("2026-02-04T06:30:00Z"),
     summary: [
-      `The first great schism tore the realm between Targaryen fury and Stark honor.`,
-      `Cities burned in the south; vengeance sang in the frozen north.`,
+      `coming soon...`,
     ],
     content: [
-      `The first great schism tore the Realm in two. In the south, House Targaryen unleashed their fury, burning cities that refused to kneel.`,
-      `In the north, House Stark rallied the frozen banners, their ancestral blades singing songs of vengeance in the bitter wind.`,
+      `coming soon...`,
     ],
   },
   {
     id: "03",
-    title: "Chapter Three",
+    title: "Gold, Honor, and Blood",
     releaseDate: new Date("2026-02-07T06:30:00Z"),
     summary: [
-      `The Houses descended into shadow games and political manipulation.`,
-      `Betrayals festered. Alliances crumbled. The realm split into factions.`,
+      `coming soon...`,
     ],
     content: [
-      `Placeholder content for chapter three.`,
-      `This will be updated with actual story content later.`,
+      `coming soon...`,
     ],
   },
   {
     id: "04",
-    title: "Chapter Four",
+    title: "The Shattering of Balance",
     releaseDate: new Date("2026-02-11T06:30:00Z"),
     summary: [
-      `Whispers of an ancient evil awakened from the depths.`,
-      `The Houses realized their conflicts were insignificant against what stirred.`,
+      `coming soon...`,
     ],
     content: [
-      `Placeholder content for chapter four.`,
-      `This will be updated with actual story content later.`,
+      `coming soon...`,
     ],
   },
   {
     id: "05",
-    title: "Chapter Five",
+    title: "Love, Loyalty, and Betrayal",
     releaseDate: new Date("2026-02-14T06:30:00Z"),
     summary: [
-      `Against all odds, the Six Houses united for survival.`,
-      `Enemies became reluctant allies. Pride yielded to necessity.`,
+      `coming soon...`,
     ],
     content: [
-      `Placeholder content for chapter five.`,
-      `This will be updated with actual story content later.`,
+      `coming soon...`,
     ],
   },
   {
     id: "06",
-    title: "Chapter Six",
+    title: "The Hunt Begins",
     releaseDate: new Date("2026-02-18T06:30:00Z"),
     summary: [
-      `The final battle determined the fate of the realm.`,
-      `Only the strongest House would claim the throne from the ashes.`,
+      `coming soon...`,
     ],
     content: [
-      `Placeholder content for chapter six.`,
-      `This will be updated with actual story content later.`,
+      `coming soon...`,
     ],
   },
 ];

@@ -4,7 +4,7 @@ import { Calendar, Clock, MapPin, Flame } from "lucide-react";
 
 const timelineEvents = [
   {
-    date: "31st January",
+    date: "3rd February",
     title: "Gates Close",
     description: "Registrations end. The unworthy shall forever be locked outside the Realm.",
     icon: Clock,

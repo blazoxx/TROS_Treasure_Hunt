@@ -1,10 +1,10 @@
 import { NextResponse } from 'next/server';
 import { NextRequest } from 'next/server';
-import clientPromise from '@/lib/mongodb';
+import getClientPromise from '@/lib/mongodb';
 
 async function getVisitorCount() {
   try {
-    const client = await clientPromise;
+    const client = await getClientPromise();
     const db = client.db('thunt');
     const collection = db.collection('stats');
     
@@ -18,7 +18,7 @@ async function getVisitorCount() {
 
 async function incrementVisitorCount() {
   try {
-    const client = await clientPromise;
+    const client = await getClientPromise();
     const db = client.db('thunt');
     const collection = db.collection('stats');
     

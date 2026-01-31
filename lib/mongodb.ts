@@ -6,7 +6,7 @@ const options = {};
 let client: MongoClient;
 let clientPromise: Promise<MongoClient> | null = null;
 
-function getClientPromise(): Promise<MongoClient> {
+export default function getClientPromise(): Promise<MongoClient> {
   if (!uri) {
     throw new Error('Please add your Mongo URI to .env.local');
   }
@@ -35,5 +35,3 @@ function getClientPromise(): Promise<MongoClient> {
 
   return clientPromise;
 }
-
-export default getClientPromise();

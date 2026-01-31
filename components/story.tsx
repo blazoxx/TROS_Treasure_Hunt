@@ -46,7 +46,7 @@ const storyChapters: StoryChapter[] = [
   {
     id: "01",
     title: "When the Sky Turned Pink",
-    releaseDate: new Date("2026-01-31T16:30:00Z"),
+    releaseDate: new Date("2026-02-01T06:30:00Z"),
     summary: [
       `An unnatural pink sky descends as a detached voice declares the world dull.`,
       `Bullets rain from above–random across the realm, but devastatingly precise at the central junction of the six territories.`,
@@ -183,10 +183,10 @@ function CountdownTimer({ releaseDate }: { releaseDate: Date }) {
   if (!timeLeft) return null;
 
   return (
-    <div className="mt-10 border-t border-red-950/50 pt-8 animate-pulse">
+    <div className="mt-10 border-t border-red-800/60 pt-8 animate-pulse">
       <div className="flex items-center justify-center gap-2 mb-6">
-        <Activity className="w-3 h-3 text-red-600" />
-        <p className="text-[10px] font-mono uppercase tracking-[0.4em] text-red-700">
+        <Activity className="w-3 h-3 text-red-300" />
+        <p className="text-[10px] font-mono uppercase tracking-[0.4em] text-red-300">
           Raven Watch
         </p>
       </div>
@@ -196,7 +196,7 @@ function CountdownTimer({ releaseDate }: { releaseDate: Date }) {
             <div className="text-2xl font-mono font-bold text-zinc-100 tracking-tighter">
               {String(value).padStart(2, "0")}
             </div>
-            <p className="text-[9px] uppercase font-mono text-red-900/80">
+            <p className="text-[9px] uppercase font-mono text-red-400/90">
               {label}
             </p>
           </div>
@@ -306,7 +306,7 @@ export function Story() {
                   {/* CONTENT */}
                   {isReleased ? (
                     <div className="grid md:grid-cols-[1fr_2fr] gap-12">
-                      <div className="text-[10px] font-mono text-red-900/60 uppercase leading-loose border-t border-red-950/30 pt-4 space-y-6">
+                      <div className="text-[10px] font-mono text-red-500/90 uppercase leading-loose border-t border-red-900/50 pt-4 space-y-6">
                         <div>
                           Subject: {chapter.id} <br />
                           Status: Unlocked <br />
@@ -346,7 +346,7 @@ export function Story() {
                         {displayContent.map((p, i) => (
                           <p
                             key={i}
-                            className="text-lg md:text-xl leading-normal text-zinc-400 font-light selection:bg-red-900 selection:text-white"
+                            className="text-lg md:text-xl leading-normal text-zinc-200 font-light selection:bg-red-900 selection:text-white"
                           >
                             {p}
                           </p>

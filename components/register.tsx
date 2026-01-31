@@ -60,13 +60,8 @@ export function Register() {
         </h2>
 
         {/* Tagline */}
-        <p className="text-foreground/70 text-lg md:text-xl lg:text-2xl mb-4 tracking-wide">
+        <p className="text-foreground/70 text-lg md:text-xl lg:text-2xl mb-6 tracking-wide">
           Those who hesitate shall be consumed by the abyss.
-        </p>
-
-        <p className="text-foreground/60 text-sm md:text-base max-w-2xl mx-auto mb-8 leading-relaxed font-light">
-          Join teams from across the region in this epic treasure hunt competition. Form your team,
-          pledge allegiance to a House, and compete for glory and prizes.
         </p>
 
         {/* Registration info */}

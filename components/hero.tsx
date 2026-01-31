@@ -24,7 +24,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 md:pt-20">
       {/* Background layers - Horror enhanced */}
       <div className="absolute inset-0 bg-black" />
       
@@ -58,34 +58,29 @@ export function Hero() {
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-        {/* Decorative crown sigil */}
-          <div className="mb-6 md:mb-8 flex justify-center w-full">
-          <svg
-            viewBox="0 0 100 50"
-            className="w-32 md:w-48 h-auto mx-auto text-blood-red"
-            fill="currentColor"
-          >
-            {/* Crown with elegant elements */}
-            <path d="M10 40 L15 20 L20 30 L25 15 L30 25 L35 10 L40 25 L45 15 L50 30 L55 20 L60 40 Z" opacity="0.8" />
-            <circle cx="35" cy="15" r="3" fill="currentColor" />
-            <circle cx="35" cy="20" r="1.5" fill="currentColor" opacity="0.6" />
-            <rect x="8" y="40" width="52" height="4" opacity="0.9" />
-          </svg>
+        {/* Raven Watch */}
+        <div className="mb-10 md:mb-12 flex items-center justify-center gap-4">
+          <span className="h-px w-14 md:w-24 bg-blood-red/50" />
+          <span className="text-xs md:text-sm font-serif uppercase tracking-[0.5em] text-zinc-100/90">
+            Raven's Watching
+          </span>
+          <span className="h-px w-14 md:w-24 bg-blood-red/50" />
         </div>
 
         {/* Main title */}
-        <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-serif tracking-tight mb-4 md:mb-6 text-shadow-fire">
+        <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-serif tracking-tight mb-8 md:mb-10 text-shadow-fire">
           <span className="block text-foreground">THE REALM</span>
           <span className="block text-blood-red">OF SIX</span>
         </h1>
 
         {/* Tagline */}
-        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-foreground/80 tracking-wide mb-6 md:mb-8 text-balance font-light italic">
-          Six Houses rise. One victor emerges. The throne awaits its champion.
+        <p className="text-lg sm:text-xl md:text-2xl lg:text-2xl text-foreground/80 tracking-wide mb-9 md:mb-10 text-balance font-light italic">
+          Six Houses rise. One Victor.<br/>
+          The throne awaits.
         </p>
 
         {/* Event details */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mb-8 md:mb-12 text-sm md:text-base">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-11 md:mb-14 text-sm md:text-base">
           <div className="flex items-center gap-2 text-foreground/60">
             <span className="w-2 h-2 bg-blood-red rounded-full animate-pulse shadow-[0_0_10px_var(--blood-red)]" />
             <span className="uppercase tracking-widest font-mono">20th February</span>
@@ -106,7 +101,7 @@ export function Hero() {
               (window as any).va('track', 'Register Click', { location: 'hero' });
             }
           }}
-          className="inline-block px-8 py-4 md:px-12 md:py-5 bg-blood-red text-foreground font-bold text-sm md:text-base uppercase tracking-widest border-2 border-blood-red hover:bg-transparent hover:text-blood-red transition-all duration-300 relative overflow-hidden group"
+          className="inline-block px-7 py-3.5 md:px-10 md:py-4.5 bg-blood-red text-foreground font-bold text-sm md:text-base uppercase tracking-widest border-2 border-blood-red hover:bg-transparent hover:text-blood-red transition-all duration-300 relative overflow-hidden group"
         >
           <span className="relative z-10">Register Now</span>
           <div className="absolute inset-0 bg-blood-red/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />

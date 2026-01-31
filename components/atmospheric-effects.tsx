@@ -123,93 +123,9 @@ function Particles() {
   );
 }
 
-// Cloud layers
-function Clouds() {
-  return (
-    <div className="fixed inset-0 pointer-events-none z-1 overflow-hidden motion-safe:block motion-reduce:hidden">
-      {/* Cloud layer 1 - slow moving, most visible */}
-      <div
-        className="absolute inset-0 opacity-[0.35]"
-        style={{
-          background: `
-            radial-gradient(ellipse 900px 500px at 15% 25%, rgba(180, 60, 80, 0.6) 0%, transparent 60%),
-            radial-gradient(ellipse 700px 400px at 85% 55%, rgba(150, 50, 70, 0.5) 0%, transparent 60%),
-            radial-gradient(ellipse 800px 450px at 50% 85%, rgba(120, 40, 60, 0.55) 0%, transparent 60%)
-          `,
-          animation: "cloud-drift-1 60s ease-in-out infinite",
-        }}
-      />
-
-      {/* Cloud layer 2 - medium moving */}
-      <div
-        className="absolute inset-0 opacity-[0.25]"
-        style={{
-          background: `
-            radial-gradient(ellipse 600px 350px at 75% 35%, rgba(160, 50, 70, 0.5) 0%, transparent 60%),
-            radial-gradient(ellipse 550px 300px at 25% 65%, rgba(130, 40, 60, 0.45) 0%, transparent 60%)
-          `,
-          animation: "cloud-drift-2 45s ease-in-out infinite",
-        }}
-      />
-
-      {/* Cloud layer 3 - faster accent */}
-      <div
-        className="absolute inset-0 opacity-[0.2]"
-        style={{
-          background: `
-            radial-gradient(ellipse 500px 280px at 65% 15%, rgba(200, 70, 90, 0.4) 0%, transparent 55%),
-            radial-gradient(ellipse 450px 250px at 35% 45%, rgba(170, 55, 75, 0.35) 0%, transparent 55%)
-          `,
-          animation: "cloud-drift-3 35s ease-in-out infinite",
-        }}
-      />
-
-      <style jsx>{`
-        @keyframes cloud-drift-1 {
-          0%,
-          100% {
-            transform: translate(0, 0) scale(1);
-          }
-          25% {
-            transform: translate(30px, 15px) scale(1.02);
-          }
-          50% {
-            transform: translate(-20px, 30px) scale(1.01);
-          }
-          75% {
-            transform: translate(-30px, -10px) scale(0.99);
-          }
-        }
-        @keyframes cloud-drift-2 {
-          0%,
-          100% {
-            transform: translate(0, 0) scale(1);
-          }
-          33% {
-            transform: translate(-40px, 20px) scale(1.03);
-          }
-          66% {
-            transform: translate(25px, -15px) scale(0.98);
-          }
-        }
-        @keyframes cloud-drift-3 {
-          0%,
-          100% {
-            transform: translate(0, 0);
-          }
-          50% {
-            transform: translate(50px, -25px);
-          }
-        }
-      `}</style>
-    </div>
-  );
-}
-
 export function AtmosphericEffects() {
   return (
     <>
-      <Clouds />
       <Particles />
     </>
   );

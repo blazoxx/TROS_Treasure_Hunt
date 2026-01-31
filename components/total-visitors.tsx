@@ -5,17 +5,14 @@ import { Eye } from "lucide-react";
 
 export function TotalVisitors() {
   const [total, setTotal] = useState<number>(0);
-  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Register this visit and get total count
+    // Register this visit immediately on load
     const registerVisit = async () => {
       try {
         const response = await fetch("/api/total-visitors", { method: "POST" });
         const data = await response.json();
-        console.log("Total visitors response:", data);
         setTotal(data.total);
-        setIsLoading(false);
       } catch (error) {
         console.error("Failed to register visit:", error);
         // Fallback: try to get count without incrementing
@@ -26,13 +23,12 @@ export function TotalVisitors() {
         } catch (err) {
           console.error("Failed to fetch total:", err);
         }
-        setIsLoading(false);
       }
     };
 
     registerVisit();
 
-    // Update every 10 seconds to show changes
+    // Update every 10 seconds after that
     const interval = setInterval(async () => {
       try {
         const response = await fetch("/api/total-visitors");
@@ -45,10 +41,6 @@ export function TotalVisitors() {
 
     return () => clearInterval(interval);
   }, []);
-
-  if (isLoading) {
-    return null;
-  }
 
   return (
     <div className="flex items-center justify-center gap-2 text-foreground/60">

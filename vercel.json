@@ -1,8 +1,0 @@
-{
-  "crons": [
-    {
-      "path": "/api/total-visitors",
-      "schedule": "*/10 * * * *"
-    }
-  ]
-}

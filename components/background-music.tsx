@@ -8,14 +8,16 @@ export function BackgroundMusic() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [showPrompt, setShowPrompt] = useState(true);
   const audioRef = useRef<HTMLAudioElement>(null);
+  const playInFlightRef = useRef(false);
 
   const startMusic = useCallback(() => {
     const audio = audioRef.current;
     if (!audio) return;
+    if (playInFlightRef.current || !audio.paused) return;
 
     audio.volume = 0.3;
-    audio.load(); // Ensure audio is loaded
-    
+    playInFlightRef.current = true;
+
     const playPromise = audio.play();
     
     if (playPromise !== undefined) {
@@ -26,8 +28,13 @@ export function BackgroundMusic() {
           console.log('Music started successfully');
         })
         .catch(err => {
-          console.error('Failed to play audio:', err);
-          alert('Failed to start music. Please check console for details.');
+          if (err?.name !== 'AbortError') {
+            console.error('Failed to play audio:', err);
+            alert('Failed to start music. Please check console for details.');
+          }
+        })
+        .finally(() => {
+          playInFlightRef.current = false;
         });
     }
   }, []);

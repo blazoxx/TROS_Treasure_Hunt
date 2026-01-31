@@ -46,7 +46,7 @@ const storyChapters: StoryChapter[] = [
   {
     id: "01",
     title: "When the Sky Turned Pink",
-    releaseDate: new Date("2026-01-31T12:30:00Z"),
+    releaseDate: new Date("2026-01-31T16:30:00Z"),
     summary: [
       `An unnatural pink sky descends as a detached voice declares the world dull.`,
       `Bullets rain from above–random across the realm, but devastatingly precise at the central junction of the six territories.`,

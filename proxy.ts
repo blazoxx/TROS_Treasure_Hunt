@@ -5,7 +5,7 @@ const isMaintenanceMode = () =>
   process.env.MAINTENANCE_MODE === "1" ||
   process.env.NEXT_PUBLIC_MAINTENANCE_MODE === "1";
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   if (!isMaintenanceMode()) {
     return NextResponse.next();
   }

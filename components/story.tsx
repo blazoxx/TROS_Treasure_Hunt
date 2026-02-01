@@ -268,7 +268,7 @@ export function Story() {
                 }`}
               >
                 {/* Giant ID */}
-                <div className="absolute -top-16 -left-12 select-none pointer-events-none opacity-[0.03] group-hover:opacity-[0.07] transition-opacity">
+                <div className="absolute -top-16 -left-12 select-none pointer-events-none opacity-[0.03] md:opacity-[0.03] opacity-[0.12] group-hover:opacity-[0.07] transition-opacity">
                   <span className="text-[14rem] font-serif font-black text-white italic">
                     {chapter.id}
                   </span>

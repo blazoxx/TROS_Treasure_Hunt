@@ -191,6 +191,11 @@
   }
 }
 
+@keyframes blink-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
 @keyframes blood-drip {
   0% { transform: translateY(-10px); opacity: 0; }
   10% { opacity: 0.6; }
@@ -222,6 +227,10 @@
 
 .animate-pulse-glow {
   animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.animate-blink-dot {
+  animation: blink-dot 2.5s ease-in-out infinite;
 }
 
 .animate-ominous-glow {

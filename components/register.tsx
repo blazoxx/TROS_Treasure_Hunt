@@ -88,7 +88,7 @@ export function Register() {
         {/* Deadline warning */}
         <div className="mt-8 md:mt-12 p-4 bg-blood-red/10 border-2 border-blood-red/40 inline-block backdrop-blur-sm">
           <p className="text-blood-red text-sm md:text-base font-bold uppercase tracking-wider">
-            Registration Deadline: 3rd February 2026
+            Registration Deadline: 5th February 2026
           </p>
           <p className="text-foreground/60 text-xs mt-1 font-mono">
             No soul shall be allowed after the gates close.

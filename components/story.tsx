@@ -100,56 +100,128 @@ const storyChapters: StoryChapter[] = [
     id: "02",
     title: "Fire and Ice",
     releaseDate: new Date("2026-02-04T06:30:00Z"),
+    // CHAPTER II — FIRE AND ICE
     summary: [
-      `coming soon...`,
+      `The killing pauses, but the danger does not.`,
+      `As people flee from the destroyed center, bullets begin falling again—this time from the edges of the world, slowly pushing inward.`,
+      `Distance proves meaningless as the realm starts to compress.`,
+      `Some run harder, driven by panic and instinct.`,
+      `Others stop, watch, and accept what they cannot outrun.`,
+      `Fire burns itself chasing survival.`,
+      `Ice waits, counting time and loss.`,
+      `At the scar where the world was erased, land begins to rise and an island takes shape.`,
+      `Near the borders, strange structures appear, observing without explanation.`,
+      `Both running and waiting begin to feel like mistakes.`,
     ],
     content: [
-      `coming soon...`,
+      `The killing stopped.`,
+      `The sky did not.`,
+      `Pink clouds stayed where they were, unmoving.`,
+      `The silence afterward pressed harder than the bullets.`,
+
+      `Bodies lay where authority once stood.`,
+      `Councils were empty.`,
+      `Command tents collapsed without commanders inside them.`,
+      `Only the young moved through the ruins.`,
+
+      `No one needed to say it.`,
+      `The elders were gone.`,
+
+      `At first, people ran away from the center.`,
+      `As far as their legs could carry them.`,
+      `Distance felt like safety.`,
+
+      `Then the sound returned.`,
+      `Not overhead.`,
+      `Behind them.`,
+
+      `Far away, bullets began falling again.`,
+      `Not everywhere.`,
+      `Only at the edges.`,
+
+      `The outer lands broke first.`,
+      `Villages disappeared.`,
+      `Fields folded.`,
+      `The world did not explode.`,
+      `It compressed.`,
+
+      `Some panicked.`,
+      `They ran harder.`,
+      `They ran faster.`,
+      `Fire burned itself trying to outrun the sky.`,
+
+      `At the borders, anger took over.`,
+      `People charged invisible lines.`,
+      `Bodies snapped back.`,
+      `Fists hit air.`,
+      `Weapons hit nothing.`,
+      `Nothing moved except fear.`,
+
+      `Others stopped running.`,
+      `They watched instead.`,
+      `They counted the dead.`,
+      `Counted the living.`,
+      `Counted how close the sound had come.`,
+
+      `The bullets were not random anymore.`,
+      `They were moving.`,
+      `Slowly.`,
+      `Inward.`,
+
+      `At the place where the world had been erased, the ground shifted.`,
+      `Stone surfaced.`,
+      `Water pulled away.`,
+      `Land rose from the scar.`,
+
+      `An island began to take shape.`,
+      `No paths led to it.`,
+      `Nothing invited them in.`,
+
+      `Near the inner borders, structures appeared.`,
+      `Cold.`,
+      `Seamless.`,
+      `Watching.`,
+
+      `A woman knelt beside one and went still.`,
+      `“I’ve seen this,” she said.`,
+      `Her name was Miren.`,
+
+      `No one asked her to explain.`,
+
+      `Far away, the sound crept closer.`,
+      `Fire kept running.`,
+      `Ice stayed where it was.`,
+
+      `Neither knew which choice would last longer.`,
     ],
   },
   {
     id: "03",
     title: "Gold, Honor, and Blood",
     releaseDate: new Date("2026-02-07T06:30:00Z"),
-    summary: [
-      `coming soon...`,
-    ],
-    content: [
-      `coming soon...`,
-    ],
+    summary: [`coming soon...`],
+    content: [`coming soon...`],
   },
   {
     id: "04",
     title: "The Shattering of Balance",
     releaseDate: new Date("2026-02-11T06:30:00Z"),
-    summary: [
-      `coming soon...`,
-    ],
-    content: [
-      `coming soon...`,
-    ],
+    summary: [`coming soon...`],
+    content: [`coming soon...`],
   },
   {
     id: "05",
     title: "Love, Loyalty, and Betrayal",
     releaseDate: new Date("2026-02-14T06:30:00Z"),
-    summary: [
-      `coming soon...`,
-    ],
-    content: [
-      `coming soon...`,
-    ],
+    summary: [`coming soon...`],
+    content: [`coming soon...`],
   },
   {
     id: "06",
     title: "The Hunt Begins",
     releaseDate: new Date("2026-02-18T06:30:00Z"),
-    summary: [
-      `coming soon...`,
-    ],
-    content: [
-      `coming soon...`,
-    ],
+    summary: [`coming soon...`],
+    content: [`coming soon...`],
   },
 ];
 
@@ -263,9 +335,8 @@ export function Story() {
             return (
               <article
                 key={chapter.id}
-                className={`relative group transition-opacity duration-1000 ${
-                  isReleased ? "opacity-100" : "opacity-40"
-                }`}
+                className={`relative group transition-opacity duration-1000 ${isReleased ? "opacity-100" : "opacity-40"
+                  }`}
               >
                 {/* Giant ID */}
                 <div className="absolute -top-16 -left-12 select-none pointer-events-none opacity-[0.03] md:opacity-[0.03] opacity-[0.12] group-hover:opacity-[0.07] transition-opacity">
@@ -279,9 +350,8 @@ export function Story() {
                   <div className="flex items-center justify-between gap-4 mb-8 -mt-6">
                     <div className="flex items-center gap-4 flex-1">
                       <div
-                        className={`h-[1px] flex-grow transition-colors duration-700 ${
-                          isReleased ? "bg-red-900/40" : "bg-zinc-800"
-                        }`}
+                        className={`h-[1px] flex-grow transition-colors duration-700 ${isReleased ? "bg-red-900/40" : "bg-zinc-800"
+                          }`}
                       />
                       <span className="text-[10px] mb-12 font-mono uppercase tracking-widest text-zinc-600">
                         {isReleased ? "Verified Chronicle" : "Sealed Record"}
@@ -296,9 +366,8 @@ export function Story() {
 
                   {/* TITLE */}
                   <h3
-                    className={`pl-6 text-4xl md:text-5xl font-serif tracking-tight mb-12 ${
-                      isReleased ? "text-zinc-100" : "text-zinc-700"
-                    }`}
+                    className={`pl-6 text-4xl md:text-5xl font-serif tracking-tight mb-12 ${isReleased ? "text-zinc-100" : "text-zinc-700"
+                      }`}
                   >
                     {canShowMetadata ? chapter.title : "REDACTED // RESTRICTED"}
                   </h3>
@@ -319,22 +388,20 @@ export function Story() {
                           <div className="flex gap-2 pt-4 border-t border-red-950/30">
                             <button
                               onClick={() => toggleViewMode(chapter.id)}
-                              className={`flex items-center gap-1.5 px-2.5 py-1 border text-[9px] transition-all duration-300 ${
-                                currentViewMode === "full"
+                              className={`flex items-center gap-1.5 px-2.5 py-1 border text-[9px] transition-all duration-300 ${currentViewMode === "full"
                                   ? "bg-blood-red/20 border-blood-red/60 text-blood-red font-mono uppercase tracking-wider"
                                   : "bg-transparent border-zinc-700/30 text-zinc-500 hover:border-zinc-600/50 font-mono uppercase tracking-wider"
-                              }`}
+                                }`}
                             >
                               <BookOpen className="w-2.5 h-2.5" />
                               Full
                             </button>
                             <button
                               onClick={() => toggleViewMode(chapter.id)}
-                              className={`flex items-center gap-1.5 px-2.5 py-1 border text-[9px] transition-all duration-300 ${
-                                currentViewMode === "summary"
+                              className={`flex items-center gap-1.5 px-2.5 py-1 border text-[9px] transition-all duration-300 ${currentViewMode === "summary"
                                   ? "bg-blood-red/20 border-blood-red/60 text-blood-red font-mono uppercase tracking-wider"
                                   : "bg-transparent border-zinc-700/30 text-zinc-500 hover:border-zinc-600/50 font-mono uppercase tracking-wider"
-                              }`}
+                                }`}
                             >
                               <Eye className="w-2.5 h-2.5" />
                               Summary

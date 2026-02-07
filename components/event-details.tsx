@@ -73,7 +73,7 @@ export function EventDetails() {
             <div className="text-4xl md:text-5xl font-bold text-blood-red mb-2">01</div>
             <h3 className="text-lg md:text-xl font-bold text-foreground mb-2 uppercase tracking-wider">REGISTRATION</h3>
             <p className="text-foreground/60 text-sm font-light">
-              Register your team and pledge allegiance to one of the Six Houses.
+              Registration for this cycle is closed. Watch for the next opening.
             </p>
             <div className="mt-4 w-12 h-px bg-blood-red/50 mx-auto" />
           </div>

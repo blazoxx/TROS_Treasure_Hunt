@@ -93,19 +93,14 @@ export function Hero() {
         </div>
 
         {/* CTA Button */}
-        <a
-          href="#register"
-          onClick={() => {
-            // Track register button click
-            if (typeof window !== 'undefined' && (window as any).va) {
-              (window as any).va('track', 'Register Click', { location: 'hero' });
-            }
-          }}
-          className="inline-block px-7 py-3.5 md:px-10 md:py-4.5 bg-blood-red text-foreground font-bold text-sm md:text-base uppercase tracking-widest border-2 border-blood-red hover:bg-transparent hover:text-blood-red transition-all duration-300 relative overflow-hidden group"
+        <button
+          type="button"
+          disabled
+          aria-disabled="true"
+          className="inline-block px-7 py-3.5 md:px-10 md:py-4.5 bg-zinc-900/40 text-zinc-400 font-bold text-sm md:text-base uppercase tracking-widest border-2 border-zinc-700/60 cursor-not-allowed"
         >
-          <span className="relative z-10">Register Now</span>
-          <div className="absolute inset-0 bg-blood-red/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-        </a>
+          <span className="relative z-10">Registrations Closed</span>
+        </button>
       </div>
 
       {/* Scroll indicator */}

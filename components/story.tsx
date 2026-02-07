@@ -100,10 +100,10 @@ const storyChapters: StoryChapter[] = [
     id: "02",
     title: "Fire and Ice",
     releaseDate: new Date("2026-02-04T06:30:00Z"),
-    // CHAPTER II — FIRE AND ICE
+    // CHAPTER II – FIRE AND ICE
     summary: [
       `The killing pauses, but the danger does not.`,
-      `As people flee from the destroyed center, bullets begin falling again—this time from the edges of the world, slowly pushing inward.`,
+      `As people flee from the destroyed center, bullets begin falling again–this time from the edges of the world, slowly pushing inward.`,
       `Distance proves meaningless as the realm starts to compress.`,
       `Some run harder, driven by panic and instinct.`,
       `Others stop, watch, and accept what they cannot outrun.`,
@@ -199,8 +199,124 @@ const storyChapters: StoryChapter[] = [
     id: "03",
     title: "Gold, Honor, and Blood",
     releaseDate: new Date("2026-02-07T06:30:00Z"),
-    summary: [`coming soon...`],
-    content: [`coming soon...`],
+    summary: [
+      `As the unseen force continues to move inward, the world fractures in different ways.`,
+      `In some lands, gold is offered and abandoned.`,
+      `In others, people stand their ground and die to buy time.`,
+      `Elsewhere, hunger turns into violence, and blood replaces order.`,
+      `Across distant regions, survival reshapes people—some rise through fear, others fall through mercy.`,
+      `Near the coast, a name is carved into the moment through violence, and defiance is aimed at the gods.`,
+      `Far from the chaos, a single voice recognizes what has begun.`,
+      `Balance has broken.`,
+    ],
+    // CHAPTER III – GOLD, HONOR, AND BLOOD
+    content: [
+      `The sound kept moving.`,
+      `Slow.`,
+      `Unstoppable.`,
+
+      `Those who ran felt it at their backs.`,
+      `Those who waited felt it in their chests.`,
+
+      `What followed was not one story.`,
+
+      `In the west, caravans overturned as people fled the shrinking edge of the world.`,
+      `Chests split open.`,
+      `Gold spilled onto the road.`,
+
+      `“Take it,” a man cried, pressing coins into shaking hands.`,
+      `“All of it.”`,
+      `“Just get us out.”`,
+
+      `No one followed him.`,
+      `When the sound reached the hills,`,
+      `gold was the first thing left behind.`,
+
+      `Far to the north, a village did not run.`,
+
+      `They formed a line instead.`,
+      `Not with banners.`,
+      `With bodies.`,
+
+      `A young man stood at the front.`,
+      `“Go,” he told the others.`,
+      `“Don’t look back.”`,
+
+      `They listened.`,
+
+      `When the sound came closer,`,
+      `he stayed where he was.`,
+
+      `By the time the children reached the trees,`,
+      `there was nothing left to see.`,
+
+      `In the south, food became a reason.`,
+      `Then an excuse.`,
+
+      `Crates were dragged into the open.`,
+      `Hands reached.`,
+      `Someone reached twice.`,
+
+      `A blade flashed.`,
+      `Then another.`,
+
+      `Blood hit the ground.`,
+      `And did not stop.`,
+
+      `Someone tried to step between them.`,
+      `He took the strike meant for another.`,
+      `Then a second.`,
+
+      `When he fell,`,
+      `no one filled the space he left behind.`,
+
+      `Near the coast, where the ground still trembled,`,
+      `a girl knelt and wiped blood from her hands.`,
+      `Not hers.`,
+
+      `A man lay on his back nearby, choking.`,
+      `His fingers clawed at her boot.`,
+
+      `He grabbed at her ankle.`,
+      `“Who –”`,
+      `He coughed.`,
+      `“Who are you?”`,
+
+      `She looked at him.`,
+
+      `Her boot came down.`,
+
+      `“D.”`,
+
+      `It came down again.`,
+
+      `“A.”`,
+
+      `Again.`,
+
+      `“M.”`,
+
+      `Again.`,
+
+      `“I.”`,
+
+      `One last time.`,
+
+      `She leaned closer.`,
+      `So only the dying could hear.`,
+
+      `“Tell the gods,” she said.`,
+      `“I’m coming.”`,
+
+      `Elsewhere, far from the noise,`,
+      `a woman closed a book.`,
+
+      `She spoke once.`,
+      `Quietly.`,
+
+      `Miren said:`,
+      `“This is where balance breaks.”`,
+    ],
   },
   {
     id: "04",
@@ -335,8 +451,9 @@ export function Story() {
             return (
               <article
                 key={chapter.id}
-                className={`relative group transition-opacity duration-1000 ${isReleased ? "opacity-100" : "opacity-40"
-                  }`}
+                className={`relative group transition-opacity duration-1000 ${
+                  isReleased ? "opacity-100" : "opacity-40"
+                }`}
               >
                 {/* Giant ID */}
                 <div className="absolute -top-16 -left-12 select-none pointer-events-none opacity-[0.03] md:opacity-[0.03] opacity-[0.12] group-hover:opacity-[0.07] transition-opacity">
@@ -350,8 +467,9 @@ export function Story() {
                   <div className="flex items-center justify-between gap-4 mb-8 -mt-6">
                     <div className="flex items-center gap-4 flex-1">
                       <div
-                        className={`h-[1px] flex-grow transition-colors duration-700 ${isReleased ? "bg-red-900/40" : "bg-zinc-800"
-                          }`}
+                        className={`h-[1px] flex-grow transition-colors duration-700 ${
+                          isReleased ? "bg-red-900/40" : "bg-zinc-800"
+                        }`}
                       />
                       <span className="text-[10px] mb-12 font-mono uppercase tracking-widest text-zinc-600">
                         {isReleased ? "Verified Chronicle" : "Sealed Record"}
@@ -366,8 +484,9 @@ export function Story() {
 
                   {/* TITLE */}
                   <h3
-                    className={`pl-6 text-4xl md:text-5xl font-serif tracking-tight mb-12 ${isReleased ? "text-zinc-100" : "text-zinc-700"
-                      }`}
+                    className={`pl-6 text-4xl md:text-5xl font-serif tracking-tight mb-12 ${
+                      isReleased ? "text-zinc-100" : "text-zinc-700"
+                    }`}
                   >
                     {canShowMetadata ? chapter.title : "REDACTED // RESTRICTED"}
                   </h3>
@@ -388,20 +507,22 @@ export function Story() {
                           <div className="flex gap-2 pt-4 border-t border-red-950/30">
                             <button
                               onClick={() => toggleViewMode(chapter.id)}
-                              className={`flex items-center gap-1.5 px-2.5 py-1 border text-[9px] transition-all duration-300 ${currentViewMode === "full"
+                              className={`flex items-center gap-1.5 px-2.5 py-1 border text-[9px] transition-all duration-300 ${
+                                currentViewMode === "full"
                                   ? "bg-blood-red/20 border-blood-red/60 text-blood-red font-mono uppercase tracking-wider"
                                   : "bg-transparent border-zinc-700/30 text-zinc-500 hover:border-zinc-600/50 font-mono uppercase tracking-wider"
-                                }`}
+                              }`}
                             >
                               <BookOpen className="w-2.5 h-2.5" />
                               Full
                             </button>
                             <button
                               onClick={() => toggleViewMode(chapter.id)}
-                              className={`flex items-center gap-1.5 px-2.5 py-1 border text-[9px] transition-all duration-300 ${currentViewMode === "summary"
+                              className={`flex items-center gap-1.5 px-2.5 py-1 border text-[9px] transition-all duration-300 ${
+                                currentViewMode === "summary"
                                   ? "bg-blood-red/20 border-blood-red/60 text-blood-red font-mono uppercase tracking-wider"
                                   : "bg-transparent border-zinc-700/30 text-zinc-500 hover:border-zinc-600/50 font-mono uppercase tracking-wider"
-                                }`}
+                              }`}
                             >
                               <Eye className="w-2.5 h-2.5" />
                               Summary

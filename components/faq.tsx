@@ -15,7 +15,7 @@ const faqs: FAQItem[] = [
   },
   {
     question: "Who can participate?",
-    answer: "This is the inaugural event, open to students from all colleges. Form your team and register to join the hunt.",
+    answer: "Registrations for 2026 are closed. Future openings will be announced. The event is open to students from all colleges.",
   },
   {
     question: "What is the team size?",

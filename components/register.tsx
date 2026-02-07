@@ -67,31 +67,33 @@ export function Register() {
         {/* Registration info */}
         <div className="inline-block p-4 md:p-6 bg-black/60 border border-blood-red/30 mb-8 backdrop-blur-sm">
           <p className="text-foreground/50 text-sm uppercase tracking-widest mb-2 font-mono">
-            Registrations via
+            Registrations closed
           </p>
-          <p className="text-2xl md:text-3xl font-bold text-ember-orange tracking-wider">UNSTOP</p>
+          <p className="text-2xl md:text-3xl font-bold text-ember-orange tracking-wider">
+            UNSTOP
+          </p>
         </div>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a
-            href="https://bit.ly/realm-of-six"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group inline-flex items-center gap-3 px-8 py-4 md:px-12 md:py-5 bg-blood-red text-foreground font-bold text-sm md:text-base uppercase tracking-widest border-2 border-blood-red hover:bg-transparent hover:text-blood-red transition-all duration-300 relative overflow-hidden"
+          <button
+            type="button"
+            disabled
+            aria-disabled="true"
+            className="group inline-flex items-center gap-3 px-8 py-4 md:px-12 md:py-5 bg-zinc-900/40 text-zinc-400 font-bold text-sm md:text-base uppercase tracking-widest border-2 border-zinc-700/60 cursor-not-allowed"
           >
-            <Swords className="w-5 h-5 group-hover:rotate-45 transition-transform duration-300" />
-            <span>Register Now</span>
-          </a>
+            <Swords className="w-5 h-5" />
+            <span>Registrations Closed</span>
+          </button>
         </div>
 
         {/* Deadline warning */}
         <div className="mt-8 md:mt-12 p-4 bg-blood-red/10 border-2 border-blood-red/40 inline-block backdrop-blur-sm">
           <p className="text-blood-red text-sm md:text-base font-bold uppercase tracking-wider">
-            Registration Deadline: 5th February 2026
+            Registrations closed on 5th February 2026
           </p>
           <p className="text-foreground/60 text-xs mt-1 font-mono">
-            No soul shall be allowed after the gates close.
+            The gates are sealed until the next opening.
           </p>
         </div>
       </div>

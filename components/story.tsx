@@ -322,8 +322,131 @@ const storyChapters: StoryChapter[] = [
     id: "04",
     title: "The Shattering of Balance",
     releaseDate: new Date("2026-02-11T06:30:00Z"),
-    summary: [`coming soon...`],
-    content: [`coming soon...`],
+    summary: [
+      `The bullets did not just kill -- they erased hierarchy.`,
+      `Titles, bloodlines, and rank vanished beneath the same sky.`,
+      `With the old order shattered, a vacuum formed.`,
+
+      `In the east, Aric steps forward not as heir, but as direction.`,
+      `In the west, Kellan builds structure where fear once ruled.`,
+      `Near the coast, Dami becomes inevitability rather than choice.`,
+
+      `Power no longer belongs to birth, but to certainty.`,
+      `Followers gather not out of loyalty--but need.`,
+
+      `Only Miren sees the pattern forming across all paths.`,
+      `And as the island rises higher, the new balance begins to tilt.`
+    ],
+    // CHAPTER IV — THE SHATTERING OF BALANCE
+    content: [
+      `The bullets did more than kill.`,
+      `They erased rank.`,
+
+      `Generals fell beside farmers.`,
+      `Heirs died beside servants.`,
+      `High tables were emptied as easily as street corners.`,
+
+      `Titles meant nothing when the sky did not read them.`,
+
+      `When the sound finally stopped,`,
+      `the old order did not return.`,
+
+      `It lay in pieces.`,
+
+      `And in its absence,`,
+      `people looked for something new to stand behind.`,
+
+      `Without the sky deciding who lived,`,
+      `they began deciding it themselves.`,
+
+      `In the east, Aric did not claim rule.`,
+      `He simply refused to hesitate.`,
+
+      `When a scouting party refused to approach the rising land,`,
+      `he walked first.`,
+
+      `Not fast.`,
+      `Not dramatically.`,
+
+      `Just forward.`,
+
+      `They followed because standing still felt worse.`,
+
+      `Far away, in lands where smoke still lingered,`,
+      `Kellan did not speak of the island.`,
+
+      `He rebuilt structure.`,
+      `Watch rotations.`,
+      `Food distribution.`,
+      `Order without ceremony.`,
+
+      `“We move when it is time,” he said.`,
+      `“Not when we are afraid.”`,
+
+      `He did not know the island’s shape.`,
+      `Only that movement without foundation kills faster than bullets.`,
+
+      `Near the coast, Dami did not gather a crowd.`,
+      `She gathered momentum.`,
+
+      `Two factions clashed over territory that would not matter tomorrow.`,
+      `She chose neither.`,
+
+      `She ended it.`,
+
+      `Afterward, no one asked what her plan was.`,
+      `They only asked where she was going.`,
+
+      `“Toward the center,” she said.`,
+
+      `The ridge appeared at dusk.`,
+      `Fractured stone rising from retreating water.`,
+
+      `Aric reached it alone.`,
+
+      `He stepped onto the exposed rock.`,
+      `It was warm beneath his boots.`,
+
+      `Not from the sun.`,
+
+      `He looked up.`,
+
+      `And saw her.`,
+
+      `Dami stood across the fractured span.`,
+      `Wind between them.`,
+      `Distance small enough to cross.`,
+      `Large enough to matter.`,
+
+      `“You walk without knowing what waits,” she said.`,
+
+      `“You walk knowing it will,” he replied.`,
+
+      `Neither smiled.`,
+      `Neither stepped back.`,
+
+      `Behind them, their followers stopped at the edge.`,
+      `No one crossed.`,
+
+      `Far from the ridge,`,
+      `Miren stood where three paths converged.`,
+
+      `She did not move toward the island.`,
+      `She did not move away.`,
+
+      `She watched Aric step forward.`,
+      `She watched Dami hold her ground.`,
+      `She watched Kellan remain where structure still held.`,
+
+      `Patterns aligned in her mind.`,
+      `Not prophecy.`,
+      `Memory.`,
+
+      `The stone at the peak shifted.`,
+      `Just slightly.`,
+
+      `Miren turned a page.`,
+    ],
   },
   {
     id: "05",

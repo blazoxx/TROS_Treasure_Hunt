@@ -71,7 +71,7 @@ const houses: House[] = [
   },
 ];
 
-const HOUSES_RELEASE_DATE = new Date("2026-02-16T06:30:00Z");
+const HOUSES_RELEASE_DATE = new Date("2026-02-17T06:30:00Z");
 
 function CountdownTimer({ releaseDate }: { releaseDate: Date }) {
   const [timeLeft, setTimeLeft] = useState<{ d: number; h: number; m: number; s: number } | null>(null);

@@ -11,7 +11,7 @@ const timelineEvents = [
     status: "deadline",
   },
   {
-    date: "15th February",
+    date: "16th February",
     title: "The First Culling",
     description: "Online Prelims commence. Digital trials to separate the weak from the strong.",
     icon: Calendar,

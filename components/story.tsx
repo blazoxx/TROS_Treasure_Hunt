@@ -335,7 +335,7 @@ const storyChapters: StoryChapter[] = [
       `Followers gather not out of loyalty--but need.`,
 
       `Only Miren sees the pattern forming across all paths.`,
-      `And as the island rises higher, the new balance begins to tilt.`
+      `And as the island rises higher, the new balance begins to tilt.`,
     ],
     // CHAPTER IV — THE SHATTERING OF BALANCE
     content: [
@@ -452,8 +452,200 @@ const storyChapters: StoryChapter[] = [
     id: "05",
     title: "Love, Loyalty, and Betrayal",
     releaseDate: new Date("2026-02-14T15:30:00Z"),
-    summary: [`coming soon...`],
-    content: [`coming soon...`],
+    // CHAPTER V — LOVE, LOYALTY, AND BETRAYAL (SUMMARY)
+    summary: [
+      `As the island continues to rise, alliances begin to fracture.`,
+      `Aric and Dami walk the narrowing ridge together, tension replacing open hostility.`,
+      `Between them, something unspoken forms—neither trust nor distance.`,
+
+      `Elsewhere, Caelan and Rhyse emerge as new faction leaders, pulling strength from strategy and honor.`,
+      `Kellan sacrifices influence to protect those who leave his command, choosing loyalty over dominance.`,
+
+      `When the bullets begin falling randomly again, Aric senses the shift before anyone else.`,
+      `A fracture forms beneath Dami’s feet.`,
+
+      `Without explanation, he pushes her into the valley below.`,
+      `The ridge collapses, the bullets cease, and she vanishes.`,
+
+      `From the outside, it looks like betrayal.`,
+      `But even Miren, who foresaw the collapse, did not foresee his choice.`,
+    ],
+
+    // CHAPTER V — LOVE, LOYALTY, AND BETRAYAL
+    content: [
+      `The ridge narrowed with the falling tide.`,
+      `Two could not cross it without choosing who walked first.`,
+
+      `Aric and Dami walked side by side anyway.`,
+
+      `Below them, the valley swallowed light.`,
+      `Above them, the peak watched without blinking.`,
+
+      `“You still think this ends with a crown,” Dami said.`,
+
+      `“You think it ends with survival,” Aric replied.`,
+
+      `“Survival is enough.”`,
+
+      `“Not if we become monsters doing it.”`,
+
+      `She stopped walking.`,
+      `He stopped too.`,
+
+      `Wind moved between them.`,
+
+      `“Why do you look at me like that?” she asked.`,
+
+      `“Like what?”`,
+
+      `“Like you’re calculating something.”`,
+
+      `He stepped closer instead of answering.`,
+
+      `She didn’t move.`,
+
+      `For a moment,`,
+      `the world below them disappeared.`,
+
+      `Dami opened her mouth to speak again.`,
+
+      `Aric lifted a finger.`,
+      `Placed it lightly against her lips.`,
+
+      `“Quiet.”`,
+
+      `Not gentle.`,
+      `Not cruel.`,
+
+      `Just certain.`,
+
+      `Elsewhere, loyalty was being tested.`,
+
+      `In the west, Caelan convinced half of Kellan’s outer guard that strategy mattered more than solidarity.`,
+      `He promised precision over emotion.`,
+
+      `In the southern plains, Rhyse rallied those who believed honor had not died with the elders.`,
+      `He offered them dignity instead of fear.`,
+
+      `Kellan stood between the splitting lines.`,
+      `He did not fight for dominance.`,
+
+      `He sent his strongest fighters with the departing factions.`,
+
+      `“Why weaken yourself?” someone demanded.`,
+
+      `“Because if they fall,” Kellan replied,`,
+      `“we all do.”`,
+
+      `He chose loyalty over power.`,
+      `And stood smaller because of it.`,
+
+      `On the ridge,`,
+      `the air changed.`,
+
+      `Not wind.`,
+      `Not sound.`,
+
+      `Pressure.`,
+
+      `Far across the realm,`,
+      `bullets began falling again.`,
+
+      `Random.`,
+      `Unpatterned.`,
+      `Merciless.`,
+
+      `Miren felt it first.`,
+
+      `Her hand tightened on the edge of her book.`,
+      `This was not where it was meant to break.`,
+
+      `On the ridge, Aric felt it differently.`,
+
+      `Not as sight.`,
+      `As instinct.`,
+
+      `The same silence Miren used to hold before storms.`,
+      `The same pause before the sky decided.`,
+
+      `The stone beneath Dami’s boot darkened.`,
+      `A fracture forming outward in a thin, invisible arc.`,
+
+      `She didn’t see it.`,
+
+      `He did.`,
+
+      `A bullet struck the ridge behind them.`,
+      `Another shattered rock where she had stood seconds earlier.`,
+
+      `“Don’t move,” Aric said.`,
+
+      `She smiled faintly.`,
+      `“You first.”`,
+
+      `The crack widened.`,
+
+      `For a heartbeat,`,
+      `he could explain.`,
+      `He could hesitate.`,
+
+      `Or he could choose.`,
+
+      `She saw something change in his face.`,
+
+      `Not fear.`,
+
+      `Decision.`,
+
+      `“Don’t,” she said softly.`,
+
+      `It wasn’t a command.`,
+
+      `It was trust.`,
+
+      `He broke it anyway.`,
+
+      `Aric stepped into her space.`,
+      `And shoved her.`,
+
+      `Down.`,
+
+      `The ridge collapsed where she had been standing.`,
+      `Bullets tore through the stone.`,
+
+      `Dami fell into the valley.`,
+
+      `For a second,`,
+      `light bent around her body.`,
+
+      `Then she was gone.`,
+
+      `The bullets stopped.`,
+
+      `Silence flooded the ridge.`,
+
+      `Aric stood alone at the edge.`,
+      `Hands still extended from the shove.`,
+
+      `Behind him,`,
+      `followers stepped back.`,
+
+      `Not from the valley.`,
+      `From him.`,
+
+      `The first whisper reached the ridge.`,
+
+      `“He pushed her.”`,
+
+      `Far away, Miren stared at the empty fracture.`,
+
+      `She had seen the ridge collapse.`,
+
+      `She had not seen him choose her.`,
+
+      `And for the first time since the sky turned pink,`,
+      `the pattern felt incomplete.`,
+    ],
   },
   {
     id: "06",

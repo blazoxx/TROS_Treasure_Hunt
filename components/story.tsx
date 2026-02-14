@@ -451,7 +451,7 @@ const storyChapters: StoryChapter[] = [
   {
     id: "05",
     title: "Love, Loyalty, and Betrayal",
-    releaseDate: new Date("2026-02-14T06:30:00Z"),
+    releaseDate: new Date("2026-02-14T11:30:00Z"),
     summary: [`coming soon...`],
     content: [`coming soon...`],
   },
